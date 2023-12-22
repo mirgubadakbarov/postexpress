@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap");
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: #e5c97b;
+  background-color: #010e0f;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+}
+.btn {
+  border-radius: 0.8rem;
+  padding: 1.8rem 0.3rem;
+  text-transform: uppercase;
+  color: #010e0f;
+  font-family: "Oranienbaum", serif;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oranienbaum", serif;
+}
+h1 {
+  font-size: 5.6rem;
+
+  line-height: 6rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 2.4rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.6rem;
+}
+
+h6 {
+  font-size: 1.4rem;
+}
+/* YourComponent.css */
+.custom-counter {
+  list-style-type: none;
+  counter-reset: custom-counter;
+  padding-left: 0;
+}
+
+.custom-counter li {
+  position: relative;
+  
+}
+
+.custom-counter li::before {
+  content: "• " counter(custom-counter, decimal-leading-zero);
+  counter-increment: custom-counter;
+  left: 3.3rem;
+  top: -4.1rem;
+  font-size: 3rem;
+  color: #e5c97b;
+  font-family: Oranienbaum;
+  width: 2em; /* Adjust as needed */
+  text-align: right;
+}
